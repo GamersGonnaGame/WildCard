@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>WildCard</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+	</head>
+	
+	<body style="background-color:#000055">
+		
+		<!-- NAVIGATION BAR -->
+		
+		<header style="position:sticky; position:-webkit-sticky; top:0px">
+			
+			<div class="title outline_txt"><span>W i l d ⚡ C a r d</span></div>
+			
+			<div class="nav" style="background:#AAAAFF;">
+				
+				<a href="javascript:void(0);" class="icon" onclick="displayNav()">
+					<i class="fa fa-bars" style="color:black"></i>
+				</a>
+				
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Home</span></div></a>
+				<a href="../Rules.html"><div class="navbtn" style="float:left;background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Store</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Wiki</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Contact</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Review</span></div></a>
+				
+				
+				<a href="./WildCard.html"><div class="navbtn" style="float:right;"><span style="margin:auto">Sign In</span></div></a>
+				
+				<!-- Navigation links (hidden by default) -->
+				<div id="myLinks">
+					<a href="../WildCard.html"><div class="navbar" style="margin-top:3vh"><span style="margin:auto">Home</span></div></a>
+					<a href="../Rules.html"><div class="navbar" style="background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+					<a href="../WildCard.html"><div class="navbar">Store</div></a>
+					<a href="../WildCard.html"><div class="navbar">Wiki</div></a>
+					<a href="../WildCard.html"><div class="navbar">Contact</div></a>
+					<a href="../WildCard.html"><div class="navbar">Review</div></a>
+					<a href="../WildCard.html"><div class="navbar">Sign In</div></a>
+				</div>
+				
+				<script>
+				function displayNav() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+						}
+					else {
+						x.style.display = "block";
+						}
+					}
+				</script>
+				
+			</div>	
+		</header>
+		
+		<!-- /NAVIGATION BAR -->
+		
+		
+		<main>
+		
+			<div class="backlit" style="padding:5% 20%;font-family:sans-serif">
+				
+				<h1><u>Setup</u></h1>
+				<br>
+				In order to play, you need a hexagonal grid with about 6 hexes to a side. Each player also needs to create a deck of 10 cards from those available. One player should be assigned to act as The Dealer. It is the Dealer’s job to run the game and make decisions about any rules or interactions which are unclear. Other players should be encouraged to voice their opinions, but The Dealer has final say on any rulings.
+				<br><br>
+				At the start of the game, everyone should begin in a corner of the map. They should also look through their deck to prepare up to 3 cards, and draw 3 cards into their hand. Everyone can then make a priority check, and the game can begin. (See: <a href="./Core.html">Initiative</a>)
+				<br><br>
+				The Dealer also has to form the Priority Deck. This is just a deck of cards with numbers on them. You should have at least 1 card for each creature on the initiative board, and one more for <a href="./Core.html#clock">The Clock.</a>
+				<br><br>
+				
+				<h2><u>Building a Deck</u></h2>
+				<br>
+				Before play begins, each player needs to construct their Deck, and choose some Equipment. The specific rules for these cards can be found in the <a href="./Cards.html">Players Cards</a> section, and should be used to inform the type of deck a player wants to make.
+				<br><br>
+				A Deck should consist of precisely 10 cards. Whilst these can theoretically be any 10 cards, the recommend loadaout is 3 Strike, 3 Item, 2 Dash, and 2 Ability Cards. If a player wishes to use Spells, I would recommend substituting the Strike cards for Spell cards. Of course, you are free to create any deck you want with the Cards provided.
+				<br><br>
+				Unlike cards, players can take as much <a href="./Cards.html#equipment">Equipment</a> as they like. However, carrying too much will leave you hindered, and you can only use so many items at a time. Use your best judgement when choosing Equipment. Having a dagger may be useful, but not if you throw them all away. Armour is a great way to stay protected, but its heavy weight may slow you down.
+				<br><br>
+				
+				<h3><u>Prebuilt Decks</u></h3>
+				<br>
+				If you don’t want to make your own deck, or just don’t have the time, this is a list of Decks you could use instead. Unless stated otherwise, assume they have the recommended Deck: 3 Strike, 3 Item, 2 Dash, and 2 Ability Cards.
+				<br>
+				
+				<div class="statblock">
+					<h4><u>Warrior</u></h4>
+						The Warrior Deck focuses on Melee combat. They aren’t very fast, but they’re well protected and they hit hard.
+						<br><br>
+						<ul>
+							<li>Armour: Weight Total 10.</li>
+								- Metal Armour (10)
+							<li> Items: Weight Total 5. </li>
+								- Shield (5)
+							<li> Weapons: Weight Total 5. </li>
+								- Greatsword (5)
+							<li> Abilities </li>
+								- Overwhelm
+								- Finisher
+						</ul>
+						<br>
+						The Total Weight they’re carrying is 20. The Warrior therefor has a Speed of 2.
+				</div>	
+
+				<div class="statblock">
+					<h4><u>Theif</u></h4>
+						The Thief Deck allows for fast and varied movement. They keep several tricks up their sleeve, and are ready for any situation.
+						<br><br>
+						<ul>
+							<li>Armour: Weight Total 5.</li>
+								- Leather Armour (5)
+							<li> Items: Weight Total 4.</li>
+								- Bag
+									<ul>
+										<li> 1 Caltrops (1) </li>
+										<li> 1 Health Potion (1)</li>
+										<li> 1 Poison (1)</li>
+										<li> 1 Blade Oil (1)</li>
+									</ul>
+							<li> Weapons: Weight Total 5.</li>
+								- 2 Daggers (2)<br>
+								- 1 Shortsword (3)
+							<li> Abilities </li>
+								- 1 Breath<br>
+								- 1 Reassess
+						</ul>
+						<br>
+						The Total Weight they’re carrying is 10. The Thief therefor moves at full speed.
+				</div>
+				
+				<div class="statblock">
+				<h4><u>Healer</u></h4>
+					The Healer class has a focus on utility and healing. They’re a support classed designed to help others, but they are perfectly capable of holding their own.<br>
+					Their Deck consists of 2 Strike, 1 Item, 2 Dash, 5 Spell.
+					<br><br>
+					<ul>
+						<li> Items: Weight Total *8*. </li>
+							- Focus (1)<br>
+							- 2 Healing Totem (6)<br>
+							- 1 Health Potion (1)
+						<li> Weapons: Weight Total 3. </li>
+							- Shortsword (3)
+						<li> Spells </li>
+							- 2 Heal<br>
+							- 1 Haste<br>
+							- 2 Firebolt
+					</ul>
+					<br>
+					The Total Weight they’re carrying is 11. The Healer therefor has a speed of 2.
+				</div>
+				
+				<div class="statblock">	
+				<h4><u> Mage </u></h4>
+					The Mage is an expert spellcaster. They use their magical prowess to out manoeuvre their opponents to claim victory on the battle field.<br>
+					Their deck consists of 6 Spells, 2 Dash, 2 Ability.
+					<br><br>
+					<ul>
+					<li> Items: Weight Total 1. </li>
+						- Focus
+					<li> Abilities </li>
+						- 2 Reassess
+					<li> Spells </li>
+						- Firebolt<br>
+						- Fireball<br>
+						- Lightning<br>
+						- Ward<br>
+						- Haste<br>
+						- Slow
+					</ul>
+					<br>
+					The Total Weight they’re carrying is 1. The Mage therefor moves at full Speed.
+				</div>
+				<br><br>
+				<h2><u>Player Stats</u></h2>
+				
+				<br>
+				All players have the following Stats: Initiative, Speed, and Health; Initiative is a measure of the time it takes for you to choose and perform an action; Health (aka hit points or HP) is a measure of how much damage you can take; and Speed measures how fast you can move. By default, your Initiative and Health is 10, and your Speed is 3. 
+				<br><br>
+				Additionally, each player needs to have a way to track their health and initiative. This should be public information that is easily accessible for all players. I personally suggest using a d10 for health, and having an initiative board with tokens, but anything works.
+				<br><br>
+				<h2><u>The Player Mat</u></h2>
+				<br>
+				Each player should have a space in front of them to put their cards. They do not need a physical mat, but having a designated space to organise your cards is extremely useful.
+				When playing Wild⚡Card, make sure each player has space for the following piles:<br><br>
+				<ul>
+					<li> <b>Hand:</b> A pile of cards the player can use on their turn. Usually these cards will be held in the players hand, but having a space to put them down can still be helpful.</li>
+					<li> <b>Deck:</b> A pile of cards which makes up the players abilities</li>
+					<li> <b>Discard Pile:</b> A pile of cards which have already been played this Round, and so can’t be used again this Round.</li>
+					<li> <b>Removed Pile:</b> A pile of cards which have been removed from play, and so can’t be used again for this Encounter</li>
+					<li> <b>Equipment:</b> A pile of cards each showing what item a player has on them</li>
+					<li> <b>Left and Right Hand:</b> To use certain items, they must be held in at least one of the players hands. These piles will likely only contain 1 card at most, showing the items a player is currently holding.</li>
+					<li> <b>Played:</b> This is a pile for the cards that have been played this turn. These should all be Discarded or Removed appropriately at the end of the turn</li>
+					<li> <b>Prepared Cards:</b> This is 3 single card piles that players can use to keep their Prepared Cards in.</li>
+				</ul>
+			</div>
+		
+		</main>
+	</body>
+	
+</html>

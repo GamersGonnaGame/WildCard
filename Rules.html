@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>WildCard</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+	</head>
+	
+	<body style="background-color:#000055">
+		
+		<!-- NAVIGATION BAR -->
+		
+		<header style="position:sticky; position:-webkit-sticky; top:0px">
+			
+			<div class="title outline_txt"><span>W i l d ⚡ C a r d</span></div>
+			
+			<div class="nav" style="background:#AAAAFF;">
+				
+				<a href="javascript:void(0);" class="icon" onclick="displayNav()">
+					<i class="fa fa-bars" style="color:black"></i>
+				</a>
+				
+				<a href="./WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Home</span></div></a>
+				<a href="./Rules.html"><div class="navbtn" style="float:left;background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+				<a href="./WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Store</span></div></a>
+				<a href="./WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Wiki</span></div></a>
+				<a href="./WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Contact</span></div></a>
+				<a href="./WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Review</span></div></a>
+				
+				
+				<a href="./WildCard.html"><div class="navbtn" style="float:right;"><span style="margin:auto">Sign In</span></div></a>
+				
+				<!-- Navigation links (hidden by default) -->
+				<div id="myLinks">
+					<a href="./WildCard.html"><div class="navbar" style="margin-top:3vh"><span style="margin:auto">Home</span></div></a>
+					<a href="./Rules.html"><div class="navbar" style="background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+					<a href="./WildCard.html"><div class="navbar">Store</div></a>
+					<a href="./WildCard.html"><div class="navbar">Wiki</div></a>
+					<a href="./WildCard.html"><div class="navbar">Contact</div></a>
+					<a href="./WildCard.html"><div class="navbar">Review</div></a>
+					<a href="./WildCard.html"><div class="navbar">Sign In</div></a>
+				</div>
+				
+				<script>
+				function displayNav() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+						}
+					else {
+						x.style.display = "block";
+						}
+					}
+				</script>
+				
+			</div>	
+		</header>
+		
+		<!-- /NAVIGATION BAR -->
+		
+		
+		<main>
+		
+			<div class="backlit" style="display:flex;">
+				
+				<a href="./Rules/Core.html"><div class="rulebtn"><img src="./Core.png" class="ruleimg">Core</div></a>
+				<a href="./Rules/Dealer.html"><div class="rulebtn"><img src="./Dealer.png" class="ruleimg">Dealer</div></a>
+				<a href="./Rules/Setup.html"><div class="rulebtn"><img src="./Setup.png" class="ruleimg">Setup</div></a>
+				<a href="./Rules/Cards.html"><div class="rulebtn"><img src="./Cards.png" class="ruleimg">Cards</div></a>
+				
+			</div>
+		
+		</main>
+	</body>
+	
+</html>

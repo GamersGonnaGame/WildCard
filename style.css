@@ -1,0 +1,222 @@
+/* -- General -- */
+* { 
+	color:white;
+	margin:0px;
+}
+
+/* -- Classes -- */
+.backlit {
+	width:auto;
+	background:rgb(0,0,0,0.5);
+	margin:8vh 0px;
+}
+
+.title, .nav {
+	border:5px solid #000000;
+	background-color:#AA00FF;
+	color:white;
+	text-align:center;
+	font-size: 72px;
+	font-family: "Showcard Gothic","Segoe UI Heavy", "serif bold";
+	width: auto;
+	height: auto;
+}
+
+.nav {
+	height: 7vh;
+}
+
+.nav #myLinks {
+  display: none;
+}
+
+.navbtn{
+	background:#AAAAFF;
+	border: 5px solid #000000;
+	border-top: 0px;
+	text-align: center;
+	display:flex;
+	font-size: 20px;
+	cursor: pointer;
+	width: 10%;
+	height: 100%;
+	margin: auto;
+	padding: auto;
+	position:relative;
+	justify-content:center;
+	border-radius:0px 0px 15px 15px;
+	text-shadow: 0px 0px 5px #000;
+}
+
+.navbtn:visited{
+	background:#AA00AA
+}
+
+.navbtn:focus{
+	background:#AA00AA
+}
+
+.navbtn:hover{
+	background:#AA00FF
+}
+
+.navbtn:active{
+	background:#5555AA
+}
+
+.navbar{
+	background: #AAAAFF;
+	border: 2px solid black;
+	color: white;
+	padding: 3px;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	display: block;
+	height:3vh;
+	text-shadow: 0px 0px 5px #000;
+}
+
+.nav a.icon {
+  background: #AA00FF;
+  color: black;
+  border: solid;
+  float:right;
+  font-size:20px;
+  margin: -3px 0px;
+  padding: 0px 5px; 
+  display: none;
+}
+
+/*Home Page*/
+
+.bigtext{
+	font-size:2vw;
+	line-height:300%;
+	width:35vw;
+}
+
+.btR{
+	float:right;
+	text-align:right;
+	padding:40px 80px 0px 0px;
+}
+
+.btL{
+	float:left;
+	text-align:left;
+	padding:60px 0px 0px 80px;
+}
+
+.logo {
+		height:30vw;
+	}
+
+/* Rules Page*/
+
+.rulebtn{
+	width:25vw;
+	height:30vw;
+	font-family: "Showcard Gothic","Segoe UI Heavy", "serif bold";
+	font-size: 2.5vw;
+	text-align:center;
+	padding-top:5%;
+}
+
+.ruleimg{
+	margin:5%;
+	width:20vw;
+}
+
+.emoboard{
+	padding:0px 15vw;
+	width:30vw;
+}
+
+.statblock{
+	background:rgb(255,255,255,0.2);
+	border:solid;
+	padding:1%;
+	margin:1%;
+}
+
+.grid{
+	padding:1%;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/* Changes for Mobile Screens */
+
+@media screen and (max-width: 700px) {	
+	.navbtn {
+		font-size: 10px;
+		display:none;
+	}
+	
+	.title {
+		font-size: 42px;
+		height: 8vh;
+		padding-top: 10px;
+	}
+	
+	.nav{
+		font-size: 36px;
+		height: 3vh;
+	}
+	
+	.nav a.icon{
+		display:block;
+	}
+	
+	.bigtext{
+		font-size:18px;
+		line-height:35px;
+		padding:auto;
+		text-align:center;
+		width: auto;
+	}
+	
+	.logo {
+		width:auto;
+		height:auto;
+	}
+	
+	.btL{
+	padding:0px
+	}
+	
+	.btR{
+	padding:0px
+	}
+	
+	.backlit{
+		flex-direction:column;
+	}
+	
+	.rulebtn{
+		width:auto;
+		height:auto;
+		font-size:10vw;
+	}
+	
+	.ruleimg{
+		width:70vw;
+	}
+	
+	.emoboard{
+		width:100%
+	}
+	
+	.grid{
+		grid-template-columns: 1fr;
+	}
+}
+
+.outline_txt{
+    text-shadow:
+    0px 0px 10px #000,
+    0px 0px 10px #000,
+    0px 0px 10px #000,
+    0px 0px 10px #000;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>WildCard</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+	</head>
+	
+	<body style="background-color:#000055">
+		
+		<!-- NAVIGATION BAR -->
+		
+		<header style="position:sticky; position:-webkit-sticky; top:0px">
+			
+			<div class="title outline_txt"><span>W i l d ⚡ C a r d</span></div>
+			
+			<div class="nav" style="background:#AAAAFF;">
+				
+				<a href="javascript:void(0);" class="icon" onclick="displayNav()">
+					<i class="fa fa-bars" style="color:black"></i>
+				</a>
+				
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Home</span></div></a>
+				<a href="../Rules.html"><div class="navbtn" style="float:left;background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Store</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Wiki</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Contact</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Review</span></div></a>
+				
+				
+				<a href="./WildCard.html"><div class="navbtn" style="float:right;"><span style="margin:auto">Sign In</span></div></a>
+				
+				<!-- Navigation links (hidden by default) -->
+				<div id="myLinks">
+					<a href="../WildCard.html"><div class="navbar" style="margin-top:3vh"><span style="margin:auto">Home</span></div></a>
+					<a href="../Rules.html"><div class="navbar" style="background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+					<a href="../WildCard.html"><div class="navbar">Store</div></a>
+					<a href="../WildCard.html"><div class="navbar">Wiki</div></a>
+					<a href="../WildCard.html"><div class="navbar">Contact</div></a>
+					<a href="../WildCard.html"><div class="navbar">Review</div></a>
+					<a href="../WildCard.html"><div class="navbar">Sign In</div></a>
+				</div>
+				
+				<script>
+				function displayNav() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+						}
+					else {
+						x.style.display = "block";
+						}
+					}
+				</script>
+				
+			</div>	
+		</header>
+		
+		<!-- /NAVIGATION BAR -->
+		
+		
+		<main>
+		
+			<div class="backlit" style="padding:5% 20%;font-family:sans-serif">
+				
+				<h1 id="init"><u>Initiative</u></h1>
+				<br>
+				This is the core mechanic of the game. Everyone starts with 10 Initiative Points (IP), and when a card is played IP will be spent. Whoever has the highest amount of IP at any given time gets to take their turn. 
+				<br id="clock"> <br>
+				If you don’t have enough IP on your turn to play a card, don’t worry, you can still play that card but you will Overtap your initiative. Keep track how much extra IP you spent, and spend that many points at the start of the next round. (For example, If you have 2 IP left, and you play a card with a cost of 5 IP, you will start the next round with 7 IP.)
+				Be aware however, that you cannot undertap. If initiative goes unspent in a round for any reason, it is simply lost.
+				<br> <br>
+				You cannot have more than 10 IP at any point during the game.
+				<br> <br>
+				<b>Priority:</b> At the start of the game, everyone will make a Priority Check. Everyone draws a card from the Priority Deck, assigning them a number. Whoever has the Highest number gets to take their turn first should two or more players ever have equal initiative.
+				<br><br><br>	
+				
+				<h1><u>The Clock</u></h1>
+				<br>
+				The Clock is used to measure time passing throughout an encounter. It is functionally another player on the initiative board and will start with 10 IP, however it does not have a hand of cards to play. Instead all the Clock can do is Tick for a cost of 1 IP, and it will do so until it has less initiative than another creature on the board.
+				<br> <br>
+				A creature’s turn will not end if they have less IP than The Clock, but only another creature. If a creature Passes to The Clock, only a single Tick will pass before it becomes their turn again.
+				<br> <br>
+				Certain actions or effects will only take place when a Tick occurs. Resolve all of these actions before progressing to the next creatures’ turn.
+				<br><br><br>
+				<h1><u>Rounds, Turns, and Actions</u></h1>
+				<br>
+				Actual play in an encounter is split into three parts: Rounds, Turns, and Actions.
+				<br> <br>
+				
+				<h2><u>Rounds</u></h2>
+				<br>
+				A Round ends when The Clock reaches 0 IP and all relevant effects have been resolved for that Tick. At the end of a Round, all players will reset their IP back to 10 (minus any Overtapped IP), and shuffle their Discard Pile, Hand, and Deck all together, as they take a small amount of time to reassess their situation.
+				<br>
+				Place the shuffled cards together to reform your Deck, draw 3 cards to reform your Hand and return to play as normal.
+				The Clock also regains its 10 IP, and the Round begins again.
+				<br><br>
+				
+				<h2><u>Turns</u></h2>
+				<br>
+				If you have the most IP on the board *(*and the highest Priority *in the case of a tie)*, then you get to take your Turn. Your turn will end when you no longer have the highest IP.
+				<br><br>
+				On a turn, you can move up to a number of spaces equal to your Speed for free, and take as many Actions as you like until your turn ends. At the End of your turn, draw cards from your Deck until your Hand has at least 3 cards in it. If you have 3 or more cards, do not draw any new ones.
+				<br><br>
+				Additionally, if you do not wish to take any actions you can Pass your turn. When you Pass your turn, spend 1 IP and end your Turn. If you wish, you can *discard* your Hand into your Deck and draw 3 new cards as well.
+				<br><br>
+				After you pass*,* it will then be the Turn of the player on the board, *or The Clock,* with the next highest amount of IP. They perform their turn as normal, as if you were not on the board. When their turn ends, it will then be your Turn again. If this player is The Clock, a single Tick will pass before play returns to you.
+				<br><br>
+				
+				<h2><u>Actions</u></h2>
+				<br>
+				In order to perform an Action you must play a Card. Most cards will have an Effect and a Cost. When you play a card, resolve the Effect of the Card first, and then spend a number of IP equal to the Cost.
+				<br><br>
+				Be aware that you spend IP the instant after the Effect is resolved, and this could mean that your Turn will end too. If playing a card will make your IP lower than someone elses, make sure this is the last thing you want to do on your Turn.
+				<br><br><br>
+				
+				<h1><u>Social Encounters</u></h1>
+				<br>
+				Not all encounters in Wild⚡Card can be resolved by combat, sometimes players may simply wish to talk themselves out of, or into, a situation. When this happens, you won’t always need to utilize the initiative system, but there may be times where it’s useful if things are getting hairy, or players have specific goals. For example, if the players are cornered by a group of guards threatening to arrest them, utilizing initiative may help them to escape, or if they wanted to barter for a better price with a merchant, initiative may allow all players to get involved, even if they aren’t talking.
+				<br><br>
+				[For the sake of playtesting, players will construct Social Decks that can be used in multiple situations, however in the full game Social and Combat cards will be accessible to all players at all times, allowing them to utilize all actions during any situation.]
+				<br><br>
+				[A social deck should be built in a similar manner to a combat deck, but using the Social Cards. Each player selects 10 Cards to compose their deck, and the Dealer constructs an Encounter Deck to use creatures’ Social Abilities.]
+				<br><br>
+				[Unlike Combat Cards, Social Cards have a level attached to them. For every card of level X in your deck, you must have X cards of the level below, unless they are level 1 cards. For example, if you wanted a Level 2 Deception card, you must have 2 Level 1 Deception cards in your deck. If you wanted another Level 2 Deception card, you would then need 4 Level 1 Deception Cards in your deck.]
+				<br><br>
+				[Some social cards also have an Emotion tied to them. If you are feeling that emotion at a level equal to or greater than the card when you use it, assume the card is one level higher.]*
+				<br><br>
+				When entering a social encounter, each player will need to decide where they lie on the Emotion Board, and the Dealer will need to place any NPCs as well. If creatures have a Performance or Deception card, they may be able to act as if they are experiencing a different emotion than the ones influencing them. In this case, a player should place two tokens down, and mark one as their true emotion, and one as their percieved emotion. If an NPC is hiding their emotions, the dealer should only put a token down for the percieved emotions, and should keep track of their true emotion privately.
+				<br><br>
+				
+				<img src="./Emotion Board.png" class="emoboard">
+				
+				Each corner of the board represents a particular Emotion. A creature on the corner of the board has their descisions almost entirely influenced by that emotion. This doesn’t mean its the only emotion they feel by necessity, but it is the main driving force that makes their descisions. A creature that is calm or neutral in their emotions lies at the centre of the board. Creatures can share the same space on the board as they can both be influenced by the same emotions.
+				<br><br>
+				A creature’s emotions can be described by stating their Emotional Levels. This is a list of emotions and numbers that describe how to arrive at a space on the emotion board from the centre. For example, if your character was mostly Joyous and a little curious, their Emotion Level would be [Joy 3, Curiousity 1] meaning you’d walk 3 spaces towards the Joy corner, and 1 space in the direction Curiousity corner, as if you were still in the middle. The Total Emotion Level of a creature cannot go above 6. If a card would push them over this limit, they must reduce the level of one of their emotions to accomodate the new ones.
+				<br><br>
+				During the encounter, creatures will move around the Emotion Board in 2 ways:
+				<br><br>
+				<ol>
+					<li>Cards will force them to move. The main reason to play cards during an encounter is to force different targets to move around the board.</li>
+					<br>
+					<li>On their turn, a creature can move up to 1 space on the board for free, as long as its appropriate for the actions the character is taking on that turn.</li>
+				</ol>
+				<br>
+				Creatures are free to talk during Social or Combat encounters, but a Tick only represents a Second of in-game time, and so they should never say more than one or two sentences on their turn. If you want, you can allow players who take higher cost actions to talk more, since these actions take more time. The Dealer can reward good roleplay by moving characters around the Emotion Board if appropriote, but players should keep in mind the emotional states of their characters when acting. 
+				<br><br>
+				If a lot of talking is happening and players aren’t making many actions. Consider pausing or resetting initiative. If anyone would like to take an action, allow them to do so as normal, and then make sure every creature has an opportunity to act before continuing again. If you need to, resume initiative when appropriate.
+				<br><br>
+				Each colour represents the following emotions:
+				<ul>
+					<li>Blue: Sadness (Upper Left)</li>
+					<li>Magenta: Rage (Upper Right)</li>
+					<li>Red: Attraction (Middle Right)</li>
+					<li>Yellow: Joy (Bottom Right)</li>
+					<li>Green: Curiosity (Bottom Left)</li>
+					<li>Cyan: Fear (Middle Left)</li>
+				</ul>
+				<br>
+				The Player’s aim is to manipulate the NPCs in order to achieve their social goal. The Dealer should decide which area(s) of the board the NPCs have to reach before giving into the players wants. Additionally, the Players should consider which areas would cause them to give up on their goal. The Dealer should also ensure that the Players are being reasonable with thier descisions, and not simply picking the opposite side of the board from where they start every time. Similarly, the Dealer should be fair when picking their NPCs lose conditions.
+				
+			</div>
+		
+		</main>
+	</body>
+	
+</html>

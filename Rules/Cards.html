@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>WildCard</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+	</head>
+	
+	<body style="background-color:#000055">
+		
+		<!-- NAVIGATION BAR -->
+		
+		<header style="position:sticky; position:-webkit-sticky; top:0px">
+			
+			<div class="title outline_txt"><span>W i l d ⚡ C a r d</span></div>
+			
+			<div class="nav" style="background:#AAAAFF;">
+				
+				<a href="javascript:void(0);" class="icon" onclick="displayNav()">
+					<i class="fa fa-bars" style="color:black"></i>
+				</a>
+				
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Home</span></div></a>
+				<a href="../Rules.html"><div class="navbtn" style="float:left;background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Store</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Wiki</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Contact</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Review</span></div></a>
+				
+				
+				<a href="./WildCard.html"><div class="navbtn" style="float:right;"><span style="margin:auto">Sign In</span></div></a>
+				
+				<!-- Navigation links (hidden by default) -->
+				<div id="myLinks">
+					<a href="../WildCard.html"><div class="navbar" style="margin-top:3vh"><span style="margin:auto">Home</span></div></a>
+					<a href="../Rules.html"><div class="navbar" style="background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+					<a href="../WildCard.html"><div class="navbar">Store</div></a>
+					<a href="../WildCard.html"><div class="navbar">Wiki</div></a>
+					<a href="../WildCard.html"><div class="navbar">Contact</div></a>
+					<a href="../WildCard.html"><div class="navbar">Review</div></a>
+					<a href="../WildCard.html"><div class="navbar">Sign In</div></a>
+				</div>
+				
+				<script>
+				function displayNav() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+						}
+					else {
+						x.style.display = "block";
+						}
+					}
+				</script>
+				
+			</div>	
+		</header>
+		
+		<!-- /NAVIGATION BAR -->
+		
+		
+		<main>
+		
+			<div class="backlit" style="padding:5% 20%;font-family:sans-serif">
+				
+				<h1>Card Types</h1>
+					<br>
+					Throughout Wild⚡Card, you will encounter many different types of cards. Here you will find a breif explanation of the different types of cards you may encounter. If you go to the bottom of the page, you can find the individual <a href="#cards">cards</a> and their descriptions.
+					<br><br>
+					<h2>Actions</h2>
+					<br>
+					Actions usually take on one of five types: Strike, Item, Dash, Spell, or Ability.
+					<br><br>
+					Strike cards usually cost 2 IP and deal 1 damage to an adjacent target, however they can be easily modified by your Equipment. Using a blade may allow you to hit harder, whereas a bow may let you attack a target at a long range. Experiment with your Equipment and find a style that works for you
+					<br><br>
+					Item cards allow you to use items you have in your inventory. Their Cost will change depending on the item, as will their effect. Item cards may also be used on weapons and act as additional Strike cards.
+					<br>
+					Some items provide a passive bonus or effect. They don’t require active use and so have no cost (“Cost -”) but they must still be held in one of your hands in order to gain their effects.
+					<br><br>
+					Dash cards increase your Speed for a brief time allowing you to move further. Their cost is variable and equal to the boost of Speed you get, which you choose when you play them. A Dash card can only increase your Speed by at most 3 Spaces, unless stated otherwise.
+					<br><br>
+					Spell cards can have a myriad of effects and costs, however they all take time to cast. In addition to their IP Cost, they also have a casting Time. The Time of a Spell Card tells you how many Ticks must pass before the effect of the spell takes place. Should something happen that prevents you from casting the spell between you casting the Spell and the Time passing, then the spell fails and the card is Discarded or Removed like normal.
+					<br id="equipment">
+					In order to cast a Spell, you must be holding a Focus. Additionally, you may only be casting one spell at a time. Leave the Spell card at the bottom of your Play Pile until the casting Time has passed, and then Discard or Remove the card like normal.
+					<br><br>
+					Abilities are not too dissimilar to spells in that they can do a large variety of things, however they tend to have a focus on providing buffs for the individual using them, over harming or hindering other creatures. Additionally, Abilities do not typically require an item to use, nor do they have a casting time.
+					<br><br>
+				
+				<h2>Equipment</h2>
+					<br>
+					<h3>Weight</h3>
+    
+						Equipment cards come with a Weight attached to them. A player can hold up to 10 Weight for free. If they exceed this limit, their speed is reduced by one. Their speed is reduced further for every additional 10 weight they hold. They can drop any equipment they aren’t wearing for free.
+						<br><br>
+						
+					<h3>Equipping Items</h3>
+						Equipment can come in many forms, but they are usually either an Item, a Weapon, or Armour. All of these require you to have them Equipped before they can be used. An item is only Equipped if it is held in one of your hands, or otherwise worn.
+						<br><br>
+						You can change the item in your hands any time on your turn by spending 1 IP, or you can drop the item for free. Unless told otherwise, assume you can start any encounter with an item in each of your hands. Some items will be labelled Two-Handed. You can carry Two-Handed items in one hand, but you can’t use them effectively when doing so. Do not use their effects if you hold them in this manner
+						<br><br>
+						Items can also be worn to gain benefits without wielding them in your hands. If an Item card describes itself as Worn, it will also say where it needs to be worn to have the desired effect. You can only wear one item in any given space to gain their effects.
+				<br><br>
+				<h2>The Cards</h2>
+				<br>
+						<div class="grid">
+							<div class="statblock">
+								Focus: [Weight 1. Cost - ]<br>
+								Whilst you hold this Focus, you are able to cast Spells.
+							</div>
+							
+							<div class="statblock">
+								Caltrops: [Weight 1. Cost 2]<br>
+								Choose a space up to 2 spaces away. This space and any adjacent to it are now covered in Caltrops. A creature walking over Caltrops takes 1 damage per space, unless they choose to be Slowed.<br>
+								Remove this card
+							</div>
+							
+							<div class="statblock">
+								Shield: [Weight 5. Cost X.]<br>
+								Choose X from 1-3. Apply Guard X to yourself. Discard this card when you no longer have any Guard.
+							</div>
+							
+							<div class="statblock">
+								Health Potion: [Weight 1. Cost 2.]<br>
+								Heal 2 Health to yourself or an adjacent target.<br>
+								Remove this card
+							</div>
+							
+							<div class="statblock">
+								Poison: [Weight 1. Cost 1.]<br>
+								Must be used with a Melee Weapon in hand.<br>
+								For the rest of the round, when you damage a target with this Weapon, apply Poisoned to the target.<br>
+								Remove this card
+							</div>
+							
+							<div class="statblock">
+								Healing Totem: [Weight 3. Cost 3]<br>
+								Choose a space adjacent to you. This space is now occupied by the Totem.<br>
+								Until the round ends, for every other Tick that passes, each creature within 3 spaces of the Totem gains 2 Health.<br>
+								Remove this card.
+							</div>
+						</div>
+							
+						<p> The above cards on this site are for demostration purposes only. There are many more cards which you can find <a href="https://special-track-8b2.notion.site/The-Cards-805297ffca944ba09e4b9a45d314d18f?pvs=4" target="_blank">here</a>, but due to time constraints I have not included them all on this site.
+						
+			</div>
+		
+		</main>
+	</body>
+	
+</html>

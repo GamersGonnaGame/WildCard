@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>WildCard</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+	</head>
+	
+	<body style="background-color:#000055">
+		
+		<!-- NAVIGATION BAR -->
+		
+		<header style="position:sticky; position:-webkit-sticky; top:0px">
+			
+			<div class="title outline_txt"><span>W i l d ⚡ C a r d</span></div>
+			
+			<div class="nav" style="background:#AAAAFF;">
+				
+				<a href="javascript:void(0);" class="icon" onclick="displayNav()">
+					<i class="fa fa-bars" style="color:black"></i>
+				</a>
+				
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Home</span></div></a>
+				<a href="../Rules.html"><div class="navbtn" style="float:left;background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Store</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Wiki</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Contact</span></div></a>
+				<a href="../WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Review</span></div></a>
+				
+				
+				<a href="./WildCard.html"><div class="navbtn" style="float:right;"><span style="margin:auto">Sign In</span></div></a>
+				
+				<!-- Navigation links (hidden by default) -->
+				<div id="myLinks">
+					<a href="../WildCard.html"><div class="navbar" style="margin-top:3vh"><span style="margin:auto">Home</span></div></a>
+					<a href="../Rules.html"><div class="navbar" style="background:#5555AA;"><span style="margin:auto">Rules</span></div></a>
+					<a href="../WildCard.html"><div class="navbar">Store</div></a>
+					<a href="../WildCard.html"><div class="navbar">Wiki</div></a>
+					<a href="../WildCard.html"><div class="navbar">Contact</div></a>
+					<a href="../WildCard.html"><div class="navbar">Review</div></a>
+					<a href="../WildCard.html"><div class="navbar">Sign In</div></a>
+				</div>
+				
+				<script>
+				function displayNav() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+						}
+					else {
+						x.style.display = "block";
+						}
+					}
+				</script>
+				
+			</div>	
+		</header>
+		
+		<!-- /NAVIGATION BAR -->
+		
+		
+		<main>
+		
+			<div class="backlit" style="padding:5% 20%;font-family:sans-serif">
+				
+				<h1>The Dealer</h1>
+				<br>
+				Like most TTRPGs, Wild⚡Card has a games master, usually refferred to as the Dealer. In the full game, it’ll be the job of the Dealer to arbritate decisions, design encounters, make NPCs, and generrally run the game. In this playtest however, the Dealer is primarily in charge of making encounters from groups of enemies for the players to fight against. Of course, they can still do all the jobs above, but whilst testing every player should be encouraged to provide their own input to help the game run smoothly, or point out flaws in its design.
+				<br><br>
+				<h2><u>Playing as The Dealer</u></h2>
+				<br><br>
+				To play as the dealer, select a group of enemies for your players to fight. (You can find a list of enemies to pick from, along with their stats, at the end of this page.) Each enemy type comes with a stat card listing their health, speed, action pool, and other available abilities. Some abilities are passive and always active for the creature, but others must be actively used by spending Action Points. Additionally, the Dealer draws a Priority card which is assigned to The Clock.
+				<br><br>
+				The Dealer’s deck is comprised of Action Cards as determined by the action pools of all non-player creatures present in the encounter. At the start of the encounter, and any new round, the Dealer draws a single card for each creature they are controlling. Say the party are fighting a single zombie, then the Dealer’s deck will only consist of two 1 point cards, and a single 2 point card, as the Zombie’s action pool is 1/1/2, and they will draw 1 card to form their starting hand.
+				<br><br>
+				Whenever a tick passes, the Dealer draws a number of cards from their deck equal to half the number of creatures on the board rounded up, and may play any number of Action Cards to form a pool of Action Points which their creatures can then spend to take 1 action listed on the creatures card, unless that creature’s stat card says otherwise. This pool is reset to zero at the start of each new tick, so Dealers should be careful to not play all their cards at once. Do note that all creatures share this pool of Action Points, and so when one creature acts, it *may* prevent another from acting. Also note that any creature can use the action points generated from any card, regardless of which cards were added by their pools. All creatures under the Dealer’s control may move up a number of spaces up to their speed each tick.
+				<br><br>
+				If you must Draw a card and the deck is empty, simply shuffle the discard pile and replenish the deck instead of drawing any new cards. When you do this, if any creatures have been defeated, you should remove their Action Pools from the deck, before replenishing it.
+				<br><br>
+				<h2><u>Additional Decks and Cards</u></h2>
+				<br>
+				If you want to, you may wish to use additional player cards to construct unique or powerful NPCs. If you do so, simply add the NPC to the initiative tracker and play their cards like you would if you were a player character. Be warned, doing this for a lot of NPCs can likely get pretty taxing quickly as you have to manage each and every deck, so only do this sparingly.
+				<br><br>
+				Alternatively, say you wish to give a certain creature an ability from a card that is not in it’s statblock. To do so, simply add the relevent card to the encounter deck, and spend a number of action points equal to its Cost to play it. Make sure to track which creatures can use these special abilities, and remove them from the deck should they die.
+				<br><br>
+				<h2><u>Creature Stats</u></h2>
+				<br>
+				
+				Here is a list of creatures you can use to make encounters.
+				<br><br>
+				Keywords:<br>
+				Area X - Choose a point for this ability to affect. It also affects any space within X spaces of it.<br>
+				Cone X - From the creatures space, affect any spaces in a cone shape with side length X spaces.<br>
+				Requires - This ability cannot be used unless certain conditions are met<br>
+				<br>
+				
+				<div class="grid">
+				
+					<div class="statblock">	
+						<u><b>Zombie 1/1/2</b></u><br>
+						[4 Health; 1 Speed]<br>
+						Slam: 1 AP; Melee, Target 1, Damage 1.<br>
+						Grapple: 1 AP; Melee, Target 1, give Target <b>Restrained 1</b>.<br>
+						Bite: 2 AP; Requires Target to be <b>Restrained</b>. Melee, Target 1, 5 Damage.<br> 
+					</div>
+					
+					<div class="statblock">	
+						<u><b>Skeleton 1/2</b></u><br>
+						[5 Health; 1 Speed]<br>
+						Slam: 1 AP; Melee, Target 1, Damage 1.<br>
+						Arrow: 2 AP; Range 6, Damage 2.<br>
+					</div>
+					
+					<div class="statblock">
+						<u><b>Hedgehog 1/1/1</b></u><br>
+						[1 Health; 1 Speed]<br>
+						Bite: 1 AP; Melee, 1 Target, Damage 1<br>
+						Roll: 1 AP; Gain <b>Guard 2</b>.<br>
+						[Passive] Spikes. If you have <b>Guard X</b>, deal X damage to Melee attackers<br>
+						[Passive] Burrow. Dig and hide underground.<br>
+					</div>
+					
+					<div class="statblock">
+						<u><b>Sporekin 1/1/1/3</b></u><br>
+						[3 Health; 1 Speed]<br>
+						Spore: 3 AP; Cone 3, Choose Effect on creatures:<br>
+						<ul>
+							<li>Poison. Take damage equal to IP spent next turn.</li>
+							<li>Paralyse. Give creatures **Paralyzed.</li>
+							<li>Acid. Deals 2 damage.</li>
+						</ul>
+					</div>
+					
+					<div class="statblock">
+						<u><b>Ghost 1/1/1</b></u><br>
+						[4 Health; 2 Speed]<br>
+						Slam: 1 AP; Melee, Target 1, Damage 1<br>
+						Scare: 2 AP; Range 3, Target 1, Push target 3 spaces away<br>
+						Scream: 3 AP; Area 6 from self. Damage 2<br>
+						[Passive] Wall Walking. Pass through solid objects and other creatures<br>
+						[Passive] Fly. Fly at Speed over gaps or obstacles<br>
+						[Passive] Intangible. Reduce Strike damage by 2.<br>
+					</div>
+					
+					<div class="statblock">
+						<u><b>Giant Spider 1/1/2</b></u><br>
+						[5 Health; 2 Speed]<br>
+						Web: 2 AP; Range 6, Choose effect:<br>
+						<ul>
+							<li>Area 1, ½ speed of creatures in that area.</li>
+							<li>Target 1, Pull target 3 spaces closer.</li>
+						</ul>
+						Bite: 1 AP; Melee, Target 1, Damage 3.<br>
+						[Passive] Web Walk. Climb vertical or horizontal surfaces<br>
+						[Passive] Large Size. Take up 3 spaces<br>
+					</div>
+			
+					<div class="statblock">
+						<u><b>Ent 2/4</b></u><br>
+						[7 Health; 2 Speed]<br>
+						Smash: 2 AP; Range 2. Target 2. Damage 2<br>
+						Entangle: 4 AP; Range 6, Area 3, ½ speed in area<br>
+						[Passive] Plant walk. Walk through an entangled area at normal Speed.<br>
+						[Passive] Bark Skin. Reduce Strike damage by 2.<br>
+					</div>
+					
+					<div class="statblock">
+						<u><b>Pixie 1/1/2</b></u><br>
+						[2 Health; 2 Speed]<br>
+						Bite: 1 AP; Melee, Target 1, Damage 1<br>
+						Dust: 2 AP; Range 2. Target 1. Give Target <b>Restrained 2.</b><br>
+						Vanish: 3 AP; Turn <b>Invisible</b> until Pixie takes another action.<br>
+						[Passive] Fly. Fly at Speed over gaps or obstacles<br>
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		</main>
+	</body>
+	
+</html>
