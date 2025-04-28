@@ -17,7 +17,7 @@
 	color:white;
 	text-align:center;
 	font-size: 72px;
-	font-family: "Showcard Gothic","Segoe UI Heavy", "serif bold";
+	font-family: "Showcard Gothic","Segoe UI Heavy", "sans-serif bold";
 	width: auto;
 	height: auto;
 }
@@ -86,6 +86,51 @@
   margin: -3px 0px;
   padding: 0px 5px; 
   display: none;
+}
+
+#overlay {
+  position: fixed;
+  margin:10%;
+  display: block;
+  width: 80%;
+  height: 50%;
+  background-color: #0000AA;
+  border: 10px solid #AA00FF;
+  z-index: 2;
+  cursor: pointer;
+  font-family:sans-serif;
+  padding:1%;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+/*Sign In*/
+
+.box{
+	border: 5px solid #AA00FF;
+	margin:5%;
+	padding:5%;
+	background: rgb(0,0,0,0.5);
+	height: 90%;
+}
+
+.confirmbtn{
+	border:5px solid black;
+	background:yellow;
+	color:black;
+	position:relative;
+	width:50%;
+	height:20%;
+	margin:auto;
+	text-align:center;
 }
 
 /*Home Page*/
