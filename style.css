@@ -88,38 +88,32 @@
   display: none;
 }
 
+/*Sign In*/
+
 #overlay {
   position: fixed;
-  margin:10%;
-  display: block;
-  width: 80%;
-  height: 50%;
+  margin:5vw;
+  display: none;
+  width: 80vw;
   background-color: #0000AA;
   border: 10px solid #AA00FF;
   z-index: 2;
-  cursor: pointer;
   font-family:sans-serif;
   padding:1%;
 }
 
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+input {
+	margin:1% 0%;
+	width:95%;
+	color:black;
 }
-
-/*Sign In*/
 
 .box{
 	border: 5px solid #AA00FF;
-	margin:5%;
-	padding:5%;
+	margin:1vh;
+	padding:1vh;
 	background: rgb(0,0,0,0.5);
-	height: 90%;
+	height: 40vh;
 }
 
 .confirmbtn{
@@ -127,10 +121,13 @@
 	background:yellow;
 	color:black;
 	position:relative;
-	width:50%;
-	height:20%;
+	width:15vw;
+	height:7vh;
 	margin:auto;
 	text-align:center;
+	font-size:3vh;
+	cursor: pointer;
+	font-family: "Showcard Gothic","Segoe UI Heavy", "sans-serif bold";
 }
 
 /*Home Page*/
@@ -255,6 +252,10 @@
 	
 	.grid{
 		grid-template-columns: 1fr;
+	}
+	
+	.confirmbtn{
+		font-size:3vw;
 	}
 }
 
