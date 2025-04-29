@@ -43,9 +43,11 @@
 					<a href="../Review.html"><div class="navbar">Review</div></a>
 					<div class="navbar" onclick="on()">Sign In</div>
 				</div>
+			
+			</div>
 				
-				<div id="overlay" >
-				
+			<div id="overlay" >
+			
 				<div style="colour:black;border:solid black 5px;background:red;float:right;width:20px;height:20px;cursor: pointer;" onclick="off()">
 					<p style="margin:10%;text-align:center">X</p>
 				</div>
@@ -89,13 +91,10 @@
 					
 					
 					</div>
-					
-				</div>
-				
 				
 			</div>
 				
-				<script>
+			<script>
 				function displayNav() {
 					var x = document.getElementById("myLinks");
 					if (x.style.display === "block") {
@@ -113,7 +112,7 @@
 				function off() {
 					document.getElementById("overlay").style.display = "none";
 				}
-				</script>
+			</script>
 				
 			</div>	
 		</header>
