@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>WildCard</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+	</head>
+	
+	<body style="background-color:#000055">
+		
+		<!-- NAVIGATION BAR -->
+		
+		<header style="position:sticky; position:-webkit-sticky; top:0px">
+			
+			<div class="title outline_txt"><span>W i l d ⚡ C a r d</span></div>
+			
+			<div class="nav" style="background:#AAAAFF;">
+				
+				<a href="javascript:void(0);" class="icon" onclick="displayNav()">
+					<i class="fa fa-bars" style="color:black"></i>
+				</a>
+				
+				<a href="./WildCard.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Home</span></div></a>
+				<a href="./Rules.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Rules</span></div></a>
+				<a href="./Store.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Store</span></div></a>
+				<a href="./Wiki.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Wiki</span></div></a>
+				<a href="./Contact.html"><div class="navbtn" style="float:left;background:#5555AA"><span style="margin:auto">Contact</span></div></a>
+				<a href="./Review.html"><div class="navbtn" style="float:left;"><span style="margin:auto">Review</span></div></a>
+				
+				
+				<div class="navbtn" onclick="on()" style="float:right;"><span style="margin:auto">Sign In</span></div>
+				
+				<!-- Navigation links (hidden by default) -->
+				<div id="myLinks">
+					<a href="./WildCard.html"><div class="navbar" style="margin-top:3vh;"><span style="margin:auto;">Home</span></div></a>
+					<a href="./Rules.html"><div class="navbar"><span style="margin:auto">Rules</span></div></a>
+					<a href="./Store.html"><div class="navbar">Store</div></a>
+					<a href="./Wiki.html"><div class="navbar">Wiki</div></a>
+					<a href="./Contact.html"><div class="navbar" style="background:#5555AA;">Contact</div></a>
+					<a href="./Review.html"><div class="navbar">Review</div></a>
+					<div class="navbar" onclick="on()">Sign In</div>
+						
+				</div>
+				
+				<script>
+					function displayNav() {
+						var x = document.getElementById("myLinks");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+							}
+						else {
+							x.style.display = "block";
+							}
+					}
+				</script>
+				
+			</div>	
+			
+			<div id="overlay" >
+				
+				<div style="colour:black;border:solid black 5px;background:red;float:right;width:20px;height:20px;cursor: pointer;" onclick="off()">
+					<p style="margin:10%;text-align:center">X</p>
+				</div>
+				
+				<h1 style="font-family:'Showcard Gothic','Segoe UI Heavy', 'sans-serif bold';"><u>Sign In</u></h1>
+				
+				<p> This is only for demonstration purposes. Please do not input any personal information. </p>
+				
+				
+				<div style="display:grid;grid-template-columns: 1fr 1fr;">
+				
+					<div class="box">
+						<h2>Returning User</h2>
+						
+						<p style="margin-top:5%">Email:</p>
+						<input><br><br>
+						Password:<br>
+						<input>
+						
+						<div class="confirmbtn" style="bottom:-5vh;" onclick="off()">
+							<p style="margin:1vh;color:black;">Sign In</p>
+						</div>
+						
+					</div>
+					
+					<div class="box">
+						<h2>New User</h2>
+					
+						<p style="margin-top:5%">Email:</p>
+						<input>
+						Confirm Email:
+						<input>
+						Password:
+						<input>
+						Confirm Password:
+						<input>
+						
+						<div class="confirmbtn" style="bottom:-1vh;" onclick="off()">
+							<p style="margin:1vh;color:black;">Register</p>
+						</div>
+					
+					
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+			<script>
+				function on() {
+					document.getElementById("overlay").style.display = "block";
+				}
+						
+				function off() {
+					document.getElementById("overlay").style.display = "none";
+				}
+			</script>
+			
+		</header>
+		
+		<!-- /NAVIGATION BAR -->
+		
+		
+		<main>
+		
+		<div class="backlit" style="text-align:center;height:50vh">
+			<h1 style="font-size:10vh;padding:15vh;"> This Page is under construction</h1>
+		</div>
+		
+		
+		</main>
+	</body>
+	
+</html>
