@@ -82,7 +82,7 @@
   color: black;
   border: solid;
   float:right;
-  font-size:20px;
+  font-size:2.2vh;
   margin: -3px 0px;
   padding: 0px 5px; 
   display: none;
@@ -190,6 +190,15 @@ input {
 
 /* Changes for Mobile Screens */
 
+@media screen and (min-width: 700px) {
+
+#myLinks{
+	display:none;
+}
+
+}
+
+
 @media screen and (max-width: 700px) {	
 	.navbtn {
 		font-size: 10px;
@@ -197,7 +206,7 @@ input {
 	}
 	
 	.title {
-		font-size: 42px;
+		font-size: 9vw;
 		height: 8vh;
 		padding-top: 10px;
 	}
